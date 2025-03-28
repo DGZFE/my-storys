@@ -55,6 +55,11 @@
             font-size: 1.5em;
             color: #ff6347;
             display: none;
+            animation: fadeOut 10s ease-in-out;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
         }
     </style>
 </head>
@@ -62,7 +67,7 @@
     <div class="container">
         <h1>Welcome to the Story Index</h1>
         <p>Click the link below to read the story:</p>
-        <a href="revival.html" onclick="showTransitionMessage()">The 24th Revival</a>
+        <a href="the-24th-revival" onclick="showTransitionMessage()">The 24th Revival</a>
         <div class="footer">Created by Dhruv Gowda</div>
     </div>
     <div class="transition-message" id="transitionMessage">Created by Dhruv Gowda</div>
@@ -70,8 +75,8 @@
         function showTransitionMessage() {
             document.getElementById('transitionMessage').style.display = 'block';
             setTimeout(function() {
-                window.location.href = 'revival.html';
-            }, 2000);
+                window.location.href = 'the-24th-revival';
+            }, 10000);
         }
     </script>
 </body>
